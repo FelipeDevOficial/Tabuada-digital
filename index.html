@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Tabuada Digital" content="Tabuada">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="./styleTeste.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+<body background="img/imagem-de-fundo.png">
+    <div class="container">
+        <div class="titulo">
+            <a href="index.html">
+                <img src="img/Titulo-removebg-preview.png" alt="">
+            </a>
+        </div>
+
+        <div class="buttons" id="buttons">
+            <div class="primeiraLinha">
+                <a onclick="calcular(1)">
+                    <button>Tabuada do 1</button>
+                </a>
+                <a onclick="calcular(2)">
+                    <button>Tabuada do 2</button>
+                </a>
+                <a onclick="calcular(3)">
+                    <button>Tabuada do 3</button>
+                </a>
+            </div>
+            <div class="segundaLinha">
+                <a onclick="calcular(4)">
+                    <button>Tabuada do 4</button>
+                </a>
+                <a onclick="calcular(5)">
+                    <button>Tabuada do 5</button>
+                </a>
+                <a onclick="calcular(6)">
+                    <button>Tabuada do 6</button>
+                </a>
+            </div>
+            <div class="terceiraLinha">
+                <a onclick="calcular(7)">
+                    <button>Tabuada do 7</button>
+                </a>
+                <a onclick="calcular(8)">
+                    <button>Tabuada do 8</button>
+                </a>
+                <a onclick="calcular(9)">
+                    <button>Tabuada do 9</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Adicionando a div para o conteúdo da tabuada -->
+        <div id="conteudos">
+            <!-- O conteúdo da tabuada será inserido aqui -->
+        </div>
+
+        <div class="voltar" id="voltar" style="display: none;">
+            <a href="index.html">
+                <img src="img/botaoVoltar.png">
+            </a>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Concert One', cursive, sans-serif;
+    background: url('img/imagem-de-fundo.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background-color: #ad8e8e;
+    width: 90%; /* Ajusta a largura da container */
+    max-width: 800px; /* Limita a largura máxima */
+    padding: 20px; /* Adiciona espaçamento interno */
+    margin: 20px; /* Adiciona margem para manter espaçamento */
+    border-radius: 8px; /* Arredonda as bordas */
+    text-align: center; /* Centraliza o texto */
+}
+
+.titulo a img {
+    width: 100%; /* Imagem do título se ajusta à largura do container */
+    max-width: 200px; /* Limita a largura máxima da imagem do título */
+    margin: 20px 0; /* Margens verticais para espaçamento */
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte em telas menores */
+    justify-content: center; /* Centraliza os botões */
+}
+
+button {
+    width: 200px; /* Largura fixa dos botões */
+    height: 70px; /* Altura fixa dos botões */
+    background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+    border: none; /* Remove a borda do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 23px; /* Tamanho da fonte do botão */
+    letter-spacing: 3px; /* Espaçamento entre letras */
+    font-weight: 600; /* Peso da fonte do botão */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+    margin: 10px; /* Margem em torno dos botões */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves para transformações */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra para os botões */
+}
+
+button:hover {
+    transform: scale(1.05); /* Aumenta o botão quando o mouse passa por cima */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover */
+}
+
+#conteudos {
+    font-size: 19px; /* Tamanho da fonte do conteúdo */
+    font-family: cursive; /* Fonte do conteúdo */
+    margin: 20px 0; /* Margens verticais para espaçamento */
+}
+
+.voltar a img {
+    width: 88px; /* Largura da imagem do botão voltar */
+    margin: 20px auto; /* Centraliza a imagem do botão voltar */
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Cor do texto dos links */
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        width: 80%; /* Largura do botão em telas menores */
+        height: 60px; /* Altura do botão em telas menores */
+        font-size: 20px; /* Tamanho da fonte do botão em telas menores */
+    }
+
+    .titulo a img {
+        width: 80%; /* Imagem do título em telas menores */
+    }
+
+    #conteudos {
+        font-size: 18px; /* Tamanho da fonte do conteúdo em telas menores */
+    }
+
+    .container {
+        padding: 10px; /* Menos padding em telas menores */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    button {
+        height: 50px; /* Altura do botão em dispositivos móveis */
+        font-size: 16px; /* Tamanho da fonte do botão em dispositivos móveis */
+    }
+
+    .titulo a img {
+        width: 100%; /* Imagem do título em dispositivos móveis */
+    }
+
+    #conteudos {
+        font-size: 16px; /* Tamanho da fonte do conteúdo em dispositivos móveis */
+    }
+}
